@@ -206,51 +206,6 @@
             document.getElementById("seeker").style.display = "none";
         }        </script> -->
 
-
-
-
-
-
-
-
-        <script>
-            const element1 = document.getElementById("seekerbtn");
-            element1.addEventListener("click", (e) => onTabChanged(false));
-          
-          
-            const element2 = document.getElementById("employerbtn");
-            element2.addEventListener("click", (e) => onTabChanged(true));
-          
-            function onTabChanged(isEmployeeClick) {
-              let className="employer"
-              let disableClass="seeker"
-              if (!isEmployeeClick){
-                className='seeker'
-                disableClass='employer'
-              }
-          
-          
-              document.getElementById(className+"btn").style.background = "#4050b5";
-              document.getElementById(className+"btn").style.color = "white";
-              document.getElementById(disableClass+"btn").style.background = "white";
-              document.getElementById(disableClass+"btn").style.color = "black";
-          
-                document.getElementById(className).style.display = "block";
-                document.getElementById(disableClass).style.display = "none"
-            }
-          </script>
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
 </body>
