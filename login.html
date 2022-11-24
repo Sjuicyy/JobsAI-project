@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Log In</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- Font Awesome -->
@@ -49,31 +49,96 @@
       outline: none;
     }
 
-    footer {
-      height: 150px;
-      background-color: #282525;
-      margin-top: 180px;
+
+
+
+
+
+   
+
+
+    .navbar-nav a {
+      display: flex;
+      font-size: 16px;
+      line-height: 1.5;
+      font-family: Roboto, Helvetica Neue, sans-serif;
+      font-weight: 600;
     }
 
-    header a {
-      color: white
+    .navbar-nav a:hover {
+      background-color: #364492;
+      color: white;
     }
+
+    .p1 {
+      color: #3030b6;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .p2 {
+      font-size: 12px;
+      color: #000000de;
+    }
+
+    .caa {
+      text-decoration: none;
+    }
+
+    .caa:hover {
+      text-decoration: underline;
+    }
+
+    footer .foothead {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 601;
+      width: 100%;
+    }
+
+    footer .nav-links a {
+      text-decoration: none;
+      color: #c7bfbf;
+      line-height: 25px;
+      font-size: 15px;
+    }
+
+    footer .nav-links span {
+      text-decoration: none;
+      color: #c7bfbf;
+      line-height: 25px;
+      font-size: 15px;
+    }
+
+    footer .nav-links a:hover {
+      color: white;
+    }
+
+    .copyright p {
+      color: #c7bfbf;
+      font-size: 13px;
+    }
+
   </style>
 
 
 <body style="background-color: #fafafa;">
-  <header style="background-color: #4050b5;height:80px;color:#ddd">
-    <div class="navbar">
-
-      <img src="./logo.png" height="70px" alt="">
-      <div class="form-inline mx-4 p-2">
-        <a href="">Find jobs</a>
-        <a href="">Log in</a>
+  <nav class="navbar navbar-expand-sm" style="background-color: #3f51b5; color: white;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" height="45" alt="Jobs AI"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarshrink"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarshrink">
+        <div class="navbar-nav ">
+          <a class="nav-link text-white" aria-current="page" href="findjob.html">Find Jobs</a>
+          <a class="nav-link text-white" href="#"><i class='bx bx-log-in bx-sm' style="width:24px;"></i>Log In</a>
+        </div>
       </div>
     </div>
-    </div>
-
-  </header>
+  </nav>
 
   <div class="container mt-5">
     <div class="row ">
@@ -127,10 +192,63 @@
     </div>
   </div>
 
+  
 
-  <footer>
+  <!-- footer -->
+
+
+
+
+
+  <footer class=" mt-5" style="background-color: #363232;">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-2 d-flex justify-content-lg-center justify-content-sm-start mt-3">
+          <div>
+            <p class="foothead">FOR JOBSEEKER</p>
+            <ul class="nav-links list-unstyled p-0">
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Search Job</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-2 mb-md-0 d-flex justify-content-lg-center justify-content-sm-start mt-3">
+          <div>
+            <p class="foothead">FOR EMPLOYER</p>
+            <ul class="list-unstyled nav-links p-0">
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Post Job</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-2 mb-md-0 d-flex justify-content-lg-center justify-content-sm-start mt-3">
+          <div >
+            <p class="foothead">CONNECT WITH US</p>
+            <ul class="list-unstyled nav-links p-0">
+              <li><a href="https://www.facebook.com/profile.php?id=100070370344538">Facebook</a></li>
+              <li><a href="https://www.instagram.com/jobsai10/?hl=en">Instagram</a></li>
+              <li><span>Telephone :-01-5539314</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+
+    <!-- Copyright -->
+    <div class="container-fluid">
+      <div class="row copyright">
+        <div class="text-center" style="background-color: #292525;">
+          <p class="pt-3">© 2021 All Rights with JobsAI, Sage AI, LLC </p>
+        </div>
+      </div>
+    </div>
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
