@@ -98,13 +98,23 @@
       font-size: 13px;
     }
 
-    .line {
+    .vr1 {
+      display: inline-block;
+      align-self: stretch;
+      width: 20px;
+      min-height: 1em;
+      background-color: red;
+      opacity: ;
+    }
+
+
+        .line {
       border-right: 3px solid;
     }
   </style>
 
 
-<body>
+<body class="text-dark">
 
 
 
@@ -139,9 +149,24 @@
 
 
   <div class="row mt-5 ">
+    <!-- <div>
+      <div class="vr1 mx-3">
+        <div class="mx-4">
+          <p>aaa</p>
+          <input type="text">
+          <div>
+            hello
+            <p>world</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
     <div class="col-md-6 mb-2 line">
       <div class=" p-2 text-center">
-        <h5 class="text-dark">Employer Dashboard</h5>
+        <h3 class="text-dark mb-5">Employer Dashboard</h3>
         <canvas id="foo"> </canvas>
         <div id="preview">
           <div id="preview-textfield" class="preview1" style="font-size: 24px;"></div>
@@ -151,6 +176,9 @@
         </a>
         <center>
           <input type="text" id="changer" onchange="changer()" class="w-25">
+          <br> <br> <br>
+          <p> Needs Work , <a href=""> Learn how ?</a>    </p>
+          
         </center>
       </div>
     </div>
@@ -159,11 +187,18 @@
 
 
     <div class="col-md-6">
-      <div class="text-center">
-        <h5>Verifications</h5> <br>
+      <div class="text-center text-dark">
+        <h3>Verifications</h3> <br>
         <canvas class="w-75  m-auto" id="myChart"></canvas>
       </div>
     </div>
+
+
+
+
+
+
+
   </div>
 
 
@@ -185,6 +220,7 @@
         </p>
       </div>
     </div>
+
 
 
     <div class="col-md-4 m-auto line" style="max-width:450px;">
@@ -230,12 +266,12 @@
 
 
 
-  <h2 class="mx-5 mb-5 fw-bold">Score Impacting Factors</h2>
+  <h2 class="mx-5 mb-5 mt-5 fw-bold">Score Impacting Factors</h2>
   <div class="row">
     <div class="col-md-4 m-auto line" style="max-width:450px;">
       <div class=" mb-3 p-2 text-center p-4" style="height: 250px;">
         <h3>Completed Verification</h3> <br>
-        <h3 class=" ">Low Impact</h3> <br>
+        <h3 class=" ">Low Impact</h3>
 
         <h4>0%</h4>
         <p>Your Employee has not been verified</p>
@@ -247,12 +283,16 @@
         <h3>Avg. Employee Retentation</h3> <br>
         <h5 class="fs-6 ">NaN Month</h5> <br>
         <p>Average age of your employee tenure</p>
-        <a href="" class="mt-auto">View Details</a>
+        <p></p>
+        <a href="" class="mt-5">View Details</a>
       </div>
     </div>
     <div class="col-md-4 m-auto " style="max-width:450px;">
       <div class=" mb-3 p-2 text-center p-4" style="height: 250px;">
         <h3>Employee Rating</h3> <br>
+        <h3 class=" ">Low Impact</h3> 
+
+        <h4>0%</h4>
         <p>Rating obtained from your verified employees</p>
 
         <a href="aaa" class="mt-auto">View Details</a>
@@ -301,6 +341,22 @@
         </div>
       </div>
     </div>
+
+
+    <div class="mt-5">
+      <h2 class="mx-4 mt-5 fw-bold">Next Steps</h2>
+      <div class="mx-5">
+        <a href="">Employment Score Report</a><br>
+        <a href="">Background Check</a><br>
+        <a href="">e-Verify</a><br>
+        <a href="">Drug Test</a><br>
+        <a href="">Offer Letter</a><br>
+        <a href="">I-9/W4</a><br>
+        <a href="">Start Day Check List</a><br>
+
+      </div>
+    </div>
+
 
     <!-- footer -->
 
