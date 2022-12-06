@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./image/title.png">
+    <title>Job Seekers Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+    <style>
+
+
+/* start of Jobs AI logo */
+#logo {
+    padding-left: 10%;
+    height: 3.4rem;
+}
+
+/* end of JobsAI logo */
+
+
+/* Start of navbar */
+
+
+/* start of navbar left links */
+.navcol {
+    background-color: #3f51b5;
+    height: 64px;
+    width: 100%;
+    --bs-navbar-padding-y: 0 rem;
+
+}
+
+.login {
+    height: 23px;
+}
+
+.link1:hover {
+    text-decoration: none;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.link1 {
+    color: white;
+    text-decoration: none;
+    font-weight: 640;
+    font-size: 94%;
+    margin-right: 25px;
+}
+
+.link2:hover {
+    color: #fff;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.685);
+
+}
+
+.link2 {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 640;
+    margin-right: 64px;
+    font-size: 16px;
+}
+
+.loginphoto {
+    height: 26px;
+    color: white;
+    padding-left: 20px;
+    height: 16px;
+}
+
+/* end of navbar */
+
+
+.cardlinks {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.cardborder {
+   border: none;
+   height: 10px;
+}
+.cardborder2{
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0;
+    border-width: 5px;
+    color: rgb(77, 74, 74);
+    
+}
+
+.cardparas {
+    color: grey;
+}
+
+footer .foothead {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 601;
+    width: 100%;
+}
+
+footer .nav-links a {
+    text-decoration: none;
+    color: #c7bfbf;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+footer .nav-links span {
+    text-decoration: none;
+    color: #c7bfbf;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+footer .nav-links a:hover {
+    color: white;
+}
+
+.copyright p {
+    color: #c7bfbf;
+    font-size: 13px;
+}
+
+
+/* end of footer */
+
+
+
+
+/* start of copyright line */
+.copyright {
+    color: #c7bfbf;
+    background-color: #292525;
+    font-size: 13px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 750;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Start of navbar -->
+    <!-- Start of logo -->
+    <nav class="navbar  navcol ">
+        <div class="col">
+            <a class="navbar-brand me-2" href="#">
+                <img src="./image/logo.png" alt="Logo" loading="lazy" id="logo"></a>
+        </div>
+        <!-- end of logo part -->
+
+
+
+
+        <!--start of left navbar items  -->
+        <div class="row">
+            <div class="col">
+                <div class="float-end">
+                    <a href="#" class="link1">
+                        Find Jobs
+                    </a>
+                    <a href="#" class="link2">
+                        <img src="./image/login.png" alt="." class="login">
+                        Log In
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of left navbar items -->
+    <!-- End of Navbar -->
+    <h2>Employee Dashboard</h2>
+    </div>
+    </div>
+    
+    <div class="p-4">
+        <div class="row">
+            <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+                <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                    <h4 style="color:#4f4f4f ;">My Employer</h4>
+                    <p class="mt-3 cardparas">total Employer: 100</p>
+                    <p class="cardparas">potential vacancies <strong>3</strong>
+
+                        <a href="#" style="text-decoration:none ;" class="float-end mx-3">View</a>
+                    </p>
+
+                    <a href="#" class="card-lin0k1 mt-auto cardlinks">View all Employers-></a>
+
+
+                </div>
+            </div>
+            <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+                <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                    <h4 style="color:#4f4f4f ;">My Certifications</h4>
+                    <p class="mt-3 cardparas">Data Scientist</p>
+                    <p class="cardparas">Microsoft</p>
+                    <p class="cardparas">Completion Date: dd/mm/yyyy</p>
+                    <a href="#" class="card-link mt-auto cardlinks">View Other Certifications-></a>
+
+
+                </div>
+            </div>
+            <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+                <div class="card mb-3 p-2 text-center cardborder" style="height: 200px;">
+                    <h4 style="color:#4f4f4f ;">My Job Status</h4>
+
+                    <p class="cardparas">Active</p>
+                    <p class="cardparas">Applied: 3 This Month</p>
+
+                    <div class="card-link mt-auto"><a href="#" class="cardlinks"> View Applied Jobs-><a href="#"
+                                class="mx-4 cardlinks"> New Jobs-></a></div>
+
+                </div>
+            </div>
+        </div>
+        <h4 class="mb-3 mt-3">Score impacting Factors</h4>
+        <div class="row">
+            <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+                <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                    <h4 style="color:#4f4f4f ;">Employment Verification</h4>
+
+                    <p class="cardparas">Low Impact</p>
+                    <p class="cardparas">0.00%</p>
+                    <p class="cardparas">Your employement has not been verified</p>
+                    <a href="#" class="cardlinks card-link mt-auto"> View Details-></a>
+
+                </div>
+            </div>
+            <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+                <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                    <h4 style="color:#4f4f4f ;">Employment History</h4>
+                    <p class="cardparas">NaN Monts</p>
+                    <p class="cardparas">Average age of your job length</p>
+                    <a href="#" class="text-decoration-none card-link mt-auto"> View Details-></a>
+
+                </div>
+            </div>
+            <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+                <div class="card mb-3 p-2 text-center cardborder" style="height: 200px;">
+                    <h4 style="color:#4f4f4f ;">Negetive Review</h4>
+                    <p class="cardparas">High Impact</p>
+                    <p class="cardparas">0</p>
+                    <p class="cardparas">Negative info reported by your Employer</p>
+                    <a href="#" class="cardlinks card-link mt-auto"> View Details-></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+                <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                    <h4 style="color:#4f4f4f ;">Profile Completion</h4>
+                    <p class="cardparas">Low Impact</p>
+                    <p class="cardparas">60</p>
+                    <p class="cardparas">Negative info reported by your Employer</p>
+                    <a href="#" class="cardlinks card-link mt-auto"> View Details-></a>
+                </div>
+            </div>
+            <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+                <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                    <h4 style="color:#4f4f4f ;">Years of Experience</h4>
+                    <p class="cardparas">NaN Months</p>
+                    <p class="cardparas">Your years of experience</p>
+                    <a href="#" class="cardlinks card-link mt-auto"> View Details-></a>
+                </div>
+            </div>
+            <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+                <div class="card mb-3 p-2 text-center cardborder" style="height: 200px;">
+                    <h4 style="color:#4f4f4f ;">Kudos</h4>
+                    <p class="cardparas">Low Impact</p>
+                    <p class="cardparas">0 Received</p>
+                    <p class="cardparas">Kudos your colleagues and manager gave</p>
+                    <a href="#" class="cardlinks card-link mt-auto"> View Details-></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container m-auto">
+        <h3>Next steps</h3>
+        <ul style="list-style-type:none;">
+
+            <li><a href="#" style="text-decoration:none ">Background Check</a><br></li>
+            <li><a href="#" style="text-decoration:none ;">e-verify</a><br></li>
+            <li><a href="#" style="text-decoration:none ;">drug test</a><br></li>
+            <li><a href="#" style="text-decoration:none ;">offer letter</a><br></li>
+            <li><a href="#" style="text-decoration:none ;">Start State Details</a><br></li>
+            <li><a href="#" style="text-decoration:none ;">I-9/W4</a><br></li>
+            <li><a href="#" style="text-decoration:none ;">First Day Check List</a><br></li>
+            <li>
+        </ul>
+    </div>
+    </div>
+    
+</body>
+
+</html>
